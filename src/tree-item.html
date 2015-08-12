@@ -1,0 +1,8 @@
+<template>
+  <span>${network}</span>
+  <ul>
+    <li repeat.for="item of connection">
+      <tree-item network.bind="item.network" connection.bind="item.connection"></tree-item>
+    </li>
+  </ul>
+</template>
